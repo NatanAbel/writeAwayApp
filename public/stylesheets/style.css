@@ -77,8 +77,26 @@ text-decoration:none;
   max-width: 700px;
   margin: auto;
 }
+.username1{
+  display: flex;
+  justify-content: center ;
+  margin-top: 180px;
+  margin-right: 5px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  max-width: 700px;
+  margin: auto;
+}
 
 .password{
+  display: flex;
+  justify-content: center ;
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  max-width: 700px;
+  margin: auto;
+}
+.password1{
   display: flex;
   justify-content: center ;
   font-family: 'Nunito', sans-serif;
@@ -94,10 +112,11 @@ text-decoration:none;
   font-family: 'Nunito', sans-serif;
   font-size: 15px;
   max-width: 700px;
-  margin: auto;
+  margin:auto;
 }
 .container {
-margin: auto;
+  
+ margin: auto;
  max-width: 500px;
  margin-bottom: 5px;
  padding-left: 40px;
@@ -111,8 +130,8 @@ background-color: #F6ECC9;
 border-radius: 15px;
 color: #EA7A53;
 border: none;
-
 }
+
 .loginButton {
  margin: auto;
  max-width: 500px;

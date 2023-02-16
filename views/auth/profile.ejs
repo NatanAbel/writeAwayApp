@@ -6,6 +6,7 @@
 
 <% allNotes.forEach(note => { %>
     <h1><%=note.title%></h1>
+    
     <button class="note-details" ><a href="/note/<%=note._id %>">Note Details...</a></button>
     <form mothod="POST" action="/note/<%=note._id %>/delete">
         <button class="delete-button" type="submit"><a class="deleteButton" href="/note/<%=note._id %>/delete">Delete...</a></button>

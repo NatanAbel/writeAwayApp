@@ -10,8 +10,10 @@
     </label>
     <label class="contentContainer">
         Content:
-        <input class="container" type="text" name="content" value="<% if (update) { %><%=noteToUpdate.content %><% } %>"/>
-    </label>
+        <!-- <input class="container" type="textArea" name="content" value="<%# if (update) { %><%#=noteToUpdate.content %><%# } %>"/> -->
+        <textarea class="container" name="content" rows="20" cols="60" value="<% if (update) { %><%=noteToUpdate.content %><% } %>"></textarea>
+      </label>
+      
     <button class="loginButton" type="submit" > 
         <% if (update) { %>
         Update
