@@ -3,13 +3,13 @@
 </div>
 <div class="content">
 <form style="display: flex; flex-direction: column" method="POST" action="/auth/signup">
-    <label class="username">Username:<input class="container" type="text" name="username" <% if (typeof errorMessage !== 'undefined') { %>
+    <label class="username1">Username:<input class="container" type="text" name="username" <% if (typeof errorMessage !== 'undefined') { %>
         value="<%= userData.username%>" <% } %>/></label>
 
     <label class="email">Email:<input class="container" type="email" name="email" required <% if (typeof errorMessage !== 'undefined') { %>
         value="<%= userData.email%>" <% } %>/></label>
         
-    <label class="password">Password:<input class="container" type="password" name="password" required /></label>
+    <label class="password1">Password:<input class="container" type="password" name="password" required /></label>
     
     <button class = "loginButton"type="submit">Signup</button>
 </form>
