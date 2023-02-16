@@ -16,7 +16,7 @@ router.post("/signup", isLoggedOut, async (req, res) => {
 
   if (body.password.length < 6) {
     res.render("auth/signup", {
-      errorMessage: "Password too short",
+      errorMessage: "PASSWORD TOO SHORT",
       userData: req.body, user
     });
   } else {
@@ -33,7 +33,7 @@ router.post("/signup", isLoggedOut, async (req, res) => {
       if (error.code === 11000) {
         console.log("Duplicate !");
         res.render("auth/signup", {
-          errorMessage: "User name already used",
+          errorMessage: "USER NAME ALREADY USED",
           userData: req.body,
         });
         console.log("userData", userData);
